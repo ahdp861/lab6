@@ -95,7 +95,7 @@ class Fraction : ICloneable, IFracOperations
     public decimal value()
     {
         if (c==null){
-        c = (decimal)a / b;
+        c = a / (decimal)b;
         }
         return c;
     }
