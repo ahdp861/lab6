@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace aaa{
   
-class Fraction : ICloneable, IFracOperations, IEquatable<T>
+class Fraction : ICloneable, IFracOperations, IEquatable<Fraction>
 {
     public int a { get; set; }
     public uint b { get; set; }
