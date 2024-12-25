@@ -1,0 +1,6 @@
+interface IFracOperations
+{
+    decimal value();
+    void set(int a1, uint b1);
+
+}
