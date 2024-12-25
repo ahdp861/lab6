@@ -94,8 +94,10 @@ class Fraction : ICloneable, IFracOperations
 
     public decimal value()
     {
+        if (c==null){
         c = (decimal)a / b;
-        return (decimal)a / b;
+        }
+        return c;
     }
 
     public void set(int a1, uint b1)
