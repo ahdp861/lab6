@@ -1,3 +1,8 @@
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
+using System.Runtime.Intrinsics.X86;
+using System.Xml.Linq;
+
 namespace aaa{
   
 class Fraction : ICloneable, IFracOperations
