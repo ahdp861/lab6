@@ -29,11 +29,11 @@ class Program
         b.meow(3);
         MeowAll(m, m, new Cat("кот2"), new Cat("кот3"), new Dog("пес1"), new Dog("пес2"), new Dog("пес3"));
         Console.WriteLine($"количество мявов для {m} = {meows[m]}");
-        Random r = new Random;
+        Random r = new Random();
         
-        Fraction a = new Fraction(3, 6);
-        Fraction a1 = new Fraction(1, 6);
-        Fraction a2 = new Fraction(12, 36);
+        Fraction a = new Fraction(r.Next(-40, 40), r.Next(0, 40));
+        Fraction a1 = new Fraction(r.Next(-40, 40), r.Next(0, 40));
+        Fraction a2 = new Fraction(r.Next(-40, 40), r.Next(0, 40));
 
         Console.WriteLine($"{a} + {a1} + {a2} = {a1 + a2 + a}");
 
