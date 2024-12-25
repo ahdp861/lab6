@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace aaa{
   
-class Fraction : ICloneable, IFracOperations
+class Fraction : ICloneable, IFracOperations, IEquatable<T>
 {
     public int a { get; set; }
     public uint b { get; set; }
@@ -18,6 +18,11 @@ class Fraction : ICloneable, IFracOperations
             return a;
         return divisor(b, a % b);
     }
+
+    publuc bool Equals(Fraction aa){
+        return (a==aa.a && b==bb.b);
+    }
+    
 
     public Fraction(int a1, uint b1) { if (b1 == 0) { Console.WriteLine("знаменатель не может быть равен 0"); return; } a = a1 / divisor(a1, (int)b1); b = (uint)(b1 / divisor(a1, (int)b1)); }
     public override string ToString() { return $"{a}/{b}"; }
