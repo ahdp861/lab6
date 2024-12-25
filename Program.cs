@@ -10,6 +10,7 @@ class Program
     private static Dictionary<IMeow, int> meows = new Dictionary<IMeow, int>{ };
     public static void MeowAll(params IMeow[] mlist)
     {
+        meows.Clear();
         foreach (var item in mlist)
         {
             item.meow();
@@ -29,7 +30,7 @@ class Program
         b.meow(3);
         MeowAll(m, m, new Cat("кот2"), new Cat("кот3"), new Dog("пес1"), new Dog("пес2"), new Dog("пес3"));
         Console.WriteLine($"количество мявов для {m} = {meows[m]}");
-        meows.Clear();
+        
         Random r = new Random();
         
         Fraction a = new Fraction(r.Next(-40, 40), r.Next(0, 40));
