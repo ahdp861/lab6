@@ -29,6 +29,7 @@ class Program
         b.meow(3);
         MeowAll(m, m, new Cat("кот2"), new Cat("кот3"), new Dog("пес1"), new Dog("пес2"), new Dog("пес3"));
         Console.WriteLine($"количество мявов для {m} = {meows[m]}");
+        meows = Dictionary<IMeow, int>{ };
         Random r = new Random();
         
         Fraction a = new Fraction(r.Next(-40, 40), r.Next(0, 40));
