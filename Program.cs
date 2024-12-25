@@ -50,5 +50,11 @@ class Program
         Console.WriteLine($"{a2} < {a1} = {a2 < a1}");
 
         Console.WriteLine($"{a2} == {a1} = {a2 == a1}");
+
+        Console.WriteLine($"Получено {a1.Clone()} клонированием из {a1}");
+
+        Console.WriteLine($"Задана {a1.set(-10, 33)} клонированием c числителем -10 и знаменателелем 33");
+
+        Console.WriteLine($"Получено и кэшировано значение {a1.value()}");
     }
     }
